@@ -1,0 +1,237 @@
+# company-site
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>凌雲工務店｜大阪市の屋根・外壁・内装・設備・店舗改修工事</title>
+
+    <meta name="description"
+        content="大阪市を中心に屋根工事・外壁塗装・防水工事・内装工事・設備工事・店舗改修工事を承っております。無料点検・無料お見積り受付中。">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+<img src="logo.png" alt="凌雲工務店">
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#about">代表挨拶</a></li>
+
+<li><a href="#service">サービス</a></li>
+
+<li><a href="#menu">塗装メニュー</a></li>
+
+<li><a href="#works">施工事例</a></li>
+
+<li><a href="#company">会社概要</a></li>
+
+<li><a href="#contact">お問い合わせ</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<h1>
+
+住まいを守る、<br>
+
+地域密着のリフォーム専門店
+
+</h1>
+
+<p>
+
+大阪市を中心に
+
+屋根・外壁・内装・設備・店舗改修まで
+
+幅広く対応しております。
+
+</p>
+
+<a href="tel:0627772760" class="tel-button">
+
+📞 06-2777-2760
+
+</a>
+
+</div>
+
+</section>
+
+<section id="service">
+
+<div class="container">
+
+<h2>
+
+SERVICE
+
+</h2>
+
+<p class="sub">
+
+対応工事一覧
+
+</p>
+
+<div class="service-grid">
+
+<div class="card">
+
+<h3>
+
+🏠 外装工事
+
+</h3>
+
+<ul>
+
+<li>屋根工事</li>
+
+<li>外壁塗装</li>
+
+<li>防水工事</li>
+
+<li>雨漏り修理</li>
+
+<li>雨樋工事</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+🏡 内装工事一式
+
+</h3>
+
+<ul>
+
+<li>クロス工事</li>
+
+<li>床工事</li>
+
+<li>天井工事</li>
+
+<li>間取り変更</li>
+
+<li>リフォーム全般</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+🚿 設備工事一式
+
+</h3>
+
+<ul>
+
+<li>キッチン交換</li>
+
+<li>ユニットバス</li>
+
+<li>トイレ交換</li>
+
+<li>洗面化粧台</li>
+
+<li>給湯器交換</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+🏢 店舗改修工事一式
+
+</h3>
+
+<ul>
+
+<li>店舗内装</li>
+
+<li>改装工事</li>
+
+<li>設備工事</li>
+
+<li>原状回復工事</li>
+
+<li>看板工事</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+無料点検・無料お見積り受付中
+
+</h2>
+
+<p>
+
+住まいのお困りごとはお気軽にご相談ください。
+
+</p>
+
+<a href="tel:0627772760" class="cta-button">
+
+電話で相談する
+
+</a>
+
+</div>
+
+</section>
+
+</body>
+
+</html>
