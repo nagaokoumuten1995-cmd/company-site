@@ -1,719 +1,113 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
-    line-height:1.8;
-    color:#333;
-    background:#f8f8f8;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-a{
-    text-decoration:none;
-}
-
-ul{
-    list-style:none;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-/* ==========================
-   Header
-========================== */
-
-header{
-    background:#ffffff;
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:999;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
-
-header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 0;
-}
-
-.logo img{
-    width:170px;
-}
-
-nav ul{
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    color:#222;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#0099cc;
-}
-
-/* ==========================
-   Hero
-========================== */
-
-.hero{
-
-    margin-top:90px;
-
-    height:650px;
-
-    background:linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)),
-    url("k-house-1.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    color:white;
-
-}
-
-.hero-content{
-
-    width:90%;
-
-    max-width:700px;
-
-}
-
-.hero h1{
-
-    font-size:50px;
-
-    margin-bottom:25px;
-
-}
-
-.hero p{
-
-    font-size:20px;
-
-    margin-bottom:40px;
-
-}
-
-/* ==========================
-   Button
-========================== */
-
-.btn{
-
-    display:inline-block;
-
-    background:#0099cc;
-
-    color:white;
-
-    padding:16px 35px;
-
-    border-radius:50px;
-
-    margin:10px;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-.btn:hover{
-
-    background:#006699;
-
-    transform:translateY(-3px);
-
-}
-
-.btn.sub{
-
-    background:white;
-
-    color:#0099cc;
-
-}
-
-/* ==========================
-   Section
-========================== */
-
-section{
-
-    padding:90px 0;
-
-}
-
-h2{
-
-    font-size:38px;
-
-    text-align:center;
-
-    margin-bottom:20px;
-
-    color:#222;
-
-}
-
-.section-sub{
-
-    text-align:center;
-
-    color:#777;
-
-    margin-bottom:50px;
-
-}
-
-.intro{
-
-    background:white;
-
-}
-
-.intro p{
-
-    max-width:900px;
-
-    margin:auto;
-
-    font-size:18px;
-
-    text-align:center;
-
-}
-
-/* =====================================
-   工事内容
-===================================== */
-
-.service{
-    background:#ffffff;
-}
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-    margin-top:40px;
-}
-
-.service-card{
-    background:#fff;
-    border-radius:15px;
-    padding:30px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-.service-card h3{
-    color:#0099cc;
-    margin-bottom:20px;
-    font-size:24px;
-}
-
-.service-card li{
-    margin:12px 0;
-    border-bottom:1px solid #eee;
-    padding-bottom:8px;
-}
-
-
-/* =====================================
-   代表挨拶
-===================================== */
-
-.about{
-    background:#f5f8fb;
-}
-
-.about .container{
-    max-width:900px;
-}
-
-.about p{
-    margin-bottom:20px;
-    font-size:17px;
-    line-height:2;
-}
-
-
-/* =====================================
-   塗装メニュー
-===================================== */
-
-.paint-menu{
-    background:#ffffff;
-}
-
-.menu-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:30px;
-
-    margin-top:50px;
-
-}
-
-.menu-card{
-
-    background:white;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+// =======================================
+// 凌雲工務店 JavaScript
+// =======================================
 
-    transition:.3s;
+// スクロール時にふわっと表示
+const fadeElements = document.querySelectorAll(
+".service-card, .menu-card, .work-card, .about, .company, .contact"
+);
 
-}
-
-.menu-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.menu-title{
-
-    background:#0099cc;
-
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
-
-}
-
-.menu-title span{
-
-    display:inline-block;
-
-    margin-top:10px;
-
-    background:white;
-
-    color:#0099cc;
-
-    padding:5px 15px;
-
-    border-radius:30px;
-
-    font-size:14px;
-
-    font-weight:bold;
-
-}
-
-.menu-card ul{
-
-    padding:25px;
-
-}
-
-.menu-card li{
-
-    margin:12px 0;
-
-}
-
-.price{
-
-    text-align:center;
-
-    background:#f5f5f5;
-
-    padding:20px;
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    color:#0099cc;
-
-}
-
-
-/* =====================================
-   施工事例
-===================================== */
-
-.works{
-
-    background:#f8f8f8;
-
-}
-
-.works-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-
-    gap:40px;
-
-    margin-top:40px;
-
-}
-
-.work-card{
-
-    background:white;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-}
-
-.work-card img{
-
-    width:100%;
-
-    height:260px;
-
-    object-fit:cover;
-
-}
-
-.work-text{
-
-    padding:30px;
-
-}
-
-.work-text h3{
+const observer = new IntersectionObserver((entries)=>{
 
-    margin-bottom:20px;
+entries.forEach(entry=>{
 
-    color:#0099cc;
+if(entry.isIntersecting){
 
-}
-
-.work-table{
-
-    width:100%;
-
-    border-collapse:collapse;
-
-    margin-bottom:20px;
-
-}
-
-.work-table th{
-
-    width:120px;
-
-    background:#f0f0f0;
-
-    padding:12px;
-
-    text-align:left;
-
-}
-
-.work-table td{
-
-    padding:12px;
-
-    border-bottom:1px solid #eee;
+entry.target.classList.add("fade-up");
+entry.target.classList.add("show");
 
 }
-
-
-/* =====================================
-   CTA
-===================================== */
-
-.cta{
-
-    background:#0099cc;
-
-    color:white;
-
-    text-align:center;
-
-}
-
-.cta h2{
-
-    color:white;
-
-}
-
-.cta-button{
-
-    display:inline-block;
-
-    margin-top:30px;
-
-    background:white;
-
-    color:#0099cc;
-
-    padding:18px 40px;
 
-    border-radius:50px;
+});
 
-    font-size:20px;
+},{
+threshold:0.2
+});
 
-    font-weight:bold;
+fadeElements.forEach(el=>observer.observe(el));
 
-    transition:.3s;
 
-}
-
-.cta-button:hover{
+// =======================================
+// スムーズスクロール
+// =======================================
 
-    background:#f2f2f2;
-
-}
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
-/* =====================================
-   会社概要
-===================================== */
+anchor.addEventListener("click",function(e){
 
-.company{
-    background:#ffffff;
-}
+e.preventDefault();
 
-.company-table{
-    width:100%;
-    max-width:900px;
-    margin:40px auto 0;
-    border-collapse:collapse;
-    background:#fff;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
+const target=document.querySelector(this.getAttribute("href"));
 
-.company-table th{
-    width:220px;
-    background:#0099cc;
-    color:#fff;
-    padding:18px;
-    text-align:left;
-    border:1px solid #e5e5e5;
-}
+if(target){
 
-.company-table td{
-    padding:18px;
-    border:1px solid #e5e5e5;
-    background:#fff;
-}
+target.scrollIntoView({
 
-/* =====================================
-   お問い合わせ
-===================================== */
+behavior:"smooth"
 
-.contact{
-    background:#f7fbfd;
-    text-align:center;
-}
+});
 
-.contact p{
-    margin-bottom:30px;
-    font-size:18px;
 }
 
-.contact-box{
-    background:#fff;
-    max-width:700px;
-    margin:0 auto;
-    padding:40px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
+});
 
-.tel-button{
-    display:inline-block;
-    background:#0099cc;
-    color:#fff;
-    font-size:28px;
-    font-weight:bold;
-    padding:18px 45px;
-    border-radius:50px;
-    transition:.3s;
-}
+});
 
-.tel-button:hover{
-    background:#0077aa;
-    transform:translateY(-3px);
-}
 
-/* =====================================
-   Googleマップ
-===================================== */
+// =======================================
+// 電話ボタンを少し動かす
+// =======================================
 
-.map{
-    background:#fff;
-}
+const buttons=document.querySelectorAll(".btn,.cta-button,.tel-button");
 
-.map iframe{
-    width:100%;
-    border-radius:15px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
+buttons.forEach(button=>{
 
-/* =====================================
-   フッター
-===================================== */
-
-footer{
-    background:#1b1b1b;
-    color:#fff;
-    text-align:center;
-    padding:60px 20px;
-}
+button.addEventListener("touchstart",()=>{
 
-footer h3{
-    font-size:30px;
-    margin-bottom:20px;
-}
+button.style.transform="scale(.96)";
 
-footer p{
-    margin:10px 0;
-    color:#ddd;
-}
+});
 
-footer hr{
-    margin:35px auto;
-    width:120px;
-    border:none;
-    border-top:2px solid #0099cc;
-}
+button.addEventListener("touchend",()=>{
 
-/* =====================================
-   スマホ対応
-===================================== */
+button.style.transform="scale(1)";
 
-@media(max-width:768px){
+});
 
-header .container{
-    flex-direction:column;
-}
+});
 
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    margin-top:15px;
-}
 
-.hero{
-    height:500px;
-    margin-top:130px;
-}
+// =======================================
+// ヘッダー背景変更
+// =======================================
 
-.hero h1{
-    font-size:34px;
-}
+window.addEventListener("scroll",()=>{
 
-.hero p{
-    font-size:17px;
-}
+const header=document.querySelector("header");
 
-.btn{
-    display:block;
-    margin:15px auto;
-    width:90%;
-}
+if(window.scrollY>80){
 
-.service-grid,
-.menu-grid,
-.works-grid{
-    grid-template-columns:1fr;
-}
+header.style.background="#ffffff";
 
-.company-table th,
-.company-table td{
-    display:block;
-    width:100%;
-}
+header.style.boxShadow="0 10px 30px rgba(0,0,0,.12)";
 
-.company-table th{
-    border-bottom:none;
-}
+}else{
 
-.tel-button{
-    width:100%;
-    font-size:22px;
-}
+header.style.background="#ffffff";
 
-h2{
-    font-size:30px;
-}
+header.style.boxShadow="0 3px 10px rgba(0,0,0,.08)";
 
 }
-
-/* =====================================
-   スクロール時アニメーション準備
-===================================== */
-
-.fade-up{
 
-    opacity:0;
+});
 
-    transform:translateY(40px);
 
-    transition:all .8s ease;
+// =======================================
+// 読み込み完了
+// =======================================
 
-}
-
-.fade-up.show{
+window.addEventListener("load",()=>{
 
-    opacity:1;
-
-    transform:translateY(0);
-
-}
+document.body.classList.add("loaded");
 
-/* =====================================
-   終了
-===================================== */
+});
