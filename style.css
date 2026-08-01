@@ -258,4 +258,30 @@ nav a:hover{
 
     color:#3AA9E8;
 
+}@media (max-width:768px){
+
+.header .container{
+
+    padding:15px 0;
+
+}
+
+.logo img{
+
+    width:180px;
+
+}
+
+nav ul{
+
+    gap:18px;
+
+}
+
+nav a{
+
+    font-size:15px;
+
+}
+
 }
