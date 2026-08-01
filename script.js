@@ -110,4 +110,14 @@ window.addEventListener("load",()=>{
 
 document.body.classList.add("loaded");
 
+});// ハンバーガーメニュー
+
+const menuButton=document.getElementById("menuToggle");
+
+const nav=document.getElementById("navMenu");
+
+menuButton.addEventListener("click",()=>{
+
+nav.classList.toggle("active");
+
 });
