@@ -594,3 +594,24 @@ nav a{
 
 }
 
+/* タップ時の青いハイライトを消す */
+
+a{
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn{
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+}
+
+.line-btn{
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+}
+
+.line-btn:focus,
+.line-btn:active{
+    outline:none;
+    box-shadow:none;
+}
