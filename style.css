@@ -200,7 +200,7 @@ section{
 
 .logo img{
 
-    width:170px;
+    width:150px;
 
     display:block;
 
@@ -297,7 +297,7 @@ nav a{
 
     min-height:760px;
 
-    background:url("hero.jpg") center center/cover no-repeat;
+    background:url("hero.jpg") center 40px/cover no-repeat;
 
 }
 
@@ -313,7 +313,7 @@ nav a{
 
     height:95px;
 
-    bottom:95px;
+    bottom:120px;
 
     display:block;
 
@@ -329,7 +329,7 @@ nav a{
 
     .hero{
 
-        min-height:760px;
+        min-height:700px;
 
         background-position:center top;
 
