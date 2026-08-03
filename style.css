@@ -333,11 +333,13 @@ nav a{
 
     font-size:62px;
 
-    line-height:1.4;
+    line-height:1.22;
 
-    margin-bottom:30px;
+    letter-spacing:0.03em;
 
-    font-weight:bold;
+    margin-bottom:45px;
+
+    font-weight:900;
 
 }
 
