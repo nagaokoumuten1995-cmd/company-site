@@ -574,28 +574,17 @@ nav a{
 .line-btn{
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
+    gap:12px;
 
-    gap:18px;
-
-    width:340px;
-
-    max-width:90%;
-
-    background:linear-gradient(135deg,#06C755,#00B900);
-
+    background:#06C755;
     color:#fff;
+}
 
-    font-size:24px;
+.line-icon{
 
-    font-weight:700;
-
-    border-radius:60px;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
+    font-size:28px;
 
 }
 
@@ -605,10 +594,3 @@ nav a{
 
 }
 
-.line-icon{
-
-    font-size:26px;
-
-    margin-right:12px;
-
-}
