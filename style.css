@@ -156,28 +156,22 @@ section{
    STEP2 ヘッダー（完成版）
 ========================================== */
 
-.header{
+.hero{
+    position:relative;
+    min-height:760px;
 
-    position:sticky;
+    background-image:url("hero.jpg");
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:100% auto;
+    background-color:#000;
 
-    top:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
 
-    z-index:9999;
-
-    background:rgba(255,255,255,.88);
-
-    backdrop-filter:blur(14px);
-
-    -webkit-backdrop-filter:blur(14px);
-
-    padding:18px 0;
-
-    border-bottom:1px solid rgba(255,255,255,.35);
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.3s;
-
+    overflow:hidden;
 }
 
 .header .container{
