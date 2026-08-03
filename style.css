@@ -391,3 +391,120 @@ nav a{
 }
 
 }
+/* =====================================
+   HERO キャッチコピー
+===================================== */
+
+.hero-message{
+
+    display:inline-block;
+
+    color:#fff;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    margin-bottom:35px;
+
+    padding:10px 25px;
+
+    border-top:2px solid rgba(255,255,255,.8);
+
+    border-bottom:2px solid rgba(255,255,255,.8);
+
+}
+
+.hero h1{
+
+    font-size:66px;
+
+    line-height:1.2;
+
+    font-weight:900;
+
+    color:#fff;
+
+    text-shadow:0 5px 18px rgba(0,0,0,.45);
+
+}
+
+.hero h1 .gold{
+
+    color:#FFD700;
+
+    font-size:78px;
+
+}
+
+.hero h1 .highlight{
+
+    color:#ffffff;
+
+    font-size:82px;
+
+    text-shadow:
+        0 0 2px #000,
+        0 3px 10px rgba(0,0,0,.5);
+
+    border-bottom:6px solid #FFD700;
+
+    padding-bottom:8px;
+
+}
+
+.hero h1 .company-name{
+
+    font-size:72px;
+
+}
+
+.hero-button{
+
+    margin-top:55px;
+
+}
+
+/* スマホ */
+
+@media(max-width:768px){
+
+.hero-message{
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero h1 .gold{
+
+    font-size:58px;
+
+}
+
+.hero h1 .highlight{
+
+    font-size:60px;
+
+    border-bottom:4px solid #FFD700;
+
+}
+
+.hero h1 .company-name{
+
+    font-size:52px;
+
+}
+
+}
