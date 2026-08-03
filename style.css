@@ -494,15 +494,21 @@ nav a{
 
 .hero h1 .gold{
 
+    display:inline-block;
+
     color:#FFD700;
 
     font-size:90px;
 
     font-weight:900;
 
+    margin-bottom:8px;
+
 }
 
 .hero h1 .highlight{
+
+    display:inline-block;
 
     font-size:96px;
 
@@ -514,13 +520,19 @@ nav a{
 
     padding-bottom:8px;
 
+    margin:10px 0 15px;
+
 }
 
 .hero h1 .company-name{
 
+    display:inline-block;
+
     font-size:74px;
 
     font-weight:900;
+
+    margin-top:15px;
 
 }
 
