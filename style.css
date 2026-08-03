@@ -290,15 +290,21 @@ nav a{
 ===================================== */
 
 .hero{
-
     position:relative;
-
-    width:100%;
-
     min-height:760px;
 
-    background:url("hero.jpg") center 40px/cover no-repeat;
+    background-image:url("hero.jpg");
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:contain;
+    background-color:#000;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    overflow:hidden;
 }
 
 /* 画像のLINEボタン部分だけクリック可能 */
