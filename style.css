@@ -238,3 +238,156 @@ nav a{
 }
 
 }
+/* ==========================================
+   STEP3 ヒーロー
+========================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:700px;
+
+    background:url("hero.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:#fff;
+
+    width:90%;
+
+    max-width:900px;
+
+}
+
+.hero-sub{
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:62px;
+
+    line-height:1.4;
+
+    margin-bottom:30px;
+
+    font-weight:bold;
+
+}
+
+.hero-text{
+
+    font-size:22px;
+
+    margin-bottom:45px;
+
+    line-height:2;
+
+}
+
+.hero-button{
+
+    display:inline-block;
+
+    background:#4DB8E8;
+
+    color:#fff;
+
+    padding:20px 55px;
+
+    border-radius:50px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin:10px;
+
+    transition:.3s;
+
+}
+
+.hero-button:hover{
+
+    background:#2A9DD4;
+
+    transform:translateY(-3px);
+
+}
+
+.hero-button.sub{
+
+    background:#fff;
+
+    color:#4DB8E8;
+
+}
+
+/* ---------- スマホ ---------- */
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:600px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero-text{
+
+    font-size:18px;
+
+}
+
+.hero-button{
+
+    display:block;
+
+    width:90%;
+
+    margin:15px auto;
+
+    font-size:20px;
+
+}
+
+}
