@@ -271,153 +271,93 @@ nav a{
 }
 
 }
-/* ==========================================
-   STEP3 ヒーロー
-========================================== */
+/* =====================================
+   STEP3 ヒーロー（完成版）
+===================================== */
 
 .hero{
 
     position:relative;
 
-    min-height:700px;
+    width:100%;
+
+    min-height:760px;
 
     background:url("hero.jpg") center center/cover no-repeat;
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
 }
 
-.hero::before{
+/* 画像のLINEボタン部分だけクリック可能 */
 
-    content:"";
+.hero-line{
 
     position:absolute;
 
-    inset:0;
+    left:8%;
 
-    background:rgba(0,0,0,.45);
+    width:84%;
 
-}
+    height:95px;
 
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-    color:#fff;
-
-    width:90%;
-
-    max-width:900px;
-
-}
-
-.hero-sub{
-
-    font-size:18px;
-
-    letter-spacing:2px;
-
-    margin-bottom:20px;
-
-}
-
-.hero h1{
-
-    font-size:62px;
-
-    line-height:1.22;
-
-    letter-spacing:0.03em;
-
-    margin-bottom:45px;
-
-    font-weight:900;
-
-}
-
-.hero-text{
-
-    font-size:22px;
-
-    margin-bottom:45px;
-
-    line-height:2;
-
-}
-
-.hero-button{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:20px;
-
-    margin-top:45px;
-
-    background:none;
-
-    padding:0;
-
-    border-radius:0;
-
-    box-shadow:none;
-
-}
-
-
-
-.hero-button.sub{
-
-    background:#fff;
-
-    color:#4DB8E8;
-
-}
-
-/* ---------- スマホ ---------- */
-
-@media(max-width:768px){
-
-.hero{
-
-    min-height:600px;
-
-}
-
-.hero h1{
-
-    font-size:40px;
-
-}
-
-.hero-text{
-
-    font-size:18px;
-
-}
-
-.hero-button{
+    bottom:95px;
 
     display:block;
 
-    width:90%;
+    background:transparent;
 
-    margin:15px auto;
-
-    font-size:20px;
+    z-index:10;
 
 }
+
+/* スマホ */
+
+@media(max-width:768px){
+
+    .hero{
+
+        min-height:760px;
+
+        background-position:center top;
+
+    }
+
+    .hero-line{
+
+        left:8%;
+
+        width:84%;
+
+        height:90px;
+
+        bottom:90px;
+
+    }
+
+}
+
+/* タブレット */
+
+@media(min-width:769px){
+
+    .hero{
+
+        min-height:900px;
+
+    }
+
+    .hero-line{
+
+        width:420px;
+
+        height:100px;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+        bottom:120px;
+
+    }
 
 }
 /* =====================================
