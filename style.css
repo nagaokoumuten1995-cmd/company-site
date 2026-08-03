@@ -156,32 +156,6 @@ section{
    STEP2 ヘッダー（完成版）
 ========================================== */
 
-.hero{
-    position:relative;
-    overflow:hidden;
-    min-height:760px;
-}
-
-.hero-bg{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    object-position:center top;
-    background:#000;
-}
-
-.hero-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.35);
-}
-
-.hero-content{
-    position:relative;
-    z-index:10;
-}
 
 .header .container{
 
@@ -293,21 +267,25 @@ nav a{
 ===================================== */
 
 .hero{
-    position:relative;
-    min-height:760px;
 
-    background-image:url("hero.jpg");
-    background-repeat:no-repeat;
-    background-position:center top;
-    background-size:contain;
+    position:relative;
+
+    min-height:100vh;
+
+    background:url("hero.jpg") center top no-repeat;
+
+    background-size:100% auto;
+
     background-color:#000;
 
     display:flex;
-    align-items:center;
+
     justify-content:center;
-    text-align:center;
+
+    align-items:center;
 
     overflow:hidden;
+
 }
 
 /* 画像のLINEボタン部分だけクリック可能 */
@@ -344,17 +322,29 @@ nav a{
 
     }
 
-    .hero-line{
+    @media(max-width:768px){
 
-        left:8%;
+.hero{
 
-        width:84%;
+    min-height:100vh;
 
-        height:90px;
+    background-size:100% auto;
 
-        bottom:90px;
+    background-position:center top;
 
-    }
+}
+
+.hero-line{
+
+    left:7%;
+
+    width:86%;
+
+    height:95px;
+
+    bottom:92px;
+
+}
 
 }
 
@@ -364,9 +354,11 @@ nav a{
 
     .hero{
 
-        min-height:900px;
+    min-height:100vh;
 
-    }
+    background-size:contain;
+
+}
 
     .hero-line{
 
