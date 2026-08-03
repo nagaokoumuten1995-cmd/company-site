@@ -569,3 +569,24 @@ nav a{
 }
 
 }
+/* LINEボタン */
+
+.line-btn{
+
+    background:linear-gradient(135deg,#06C755,#00B900);
+
+}
+
+.line-btn:hover{
+
+    background:linear-gradient(135deg,#00B900,#009E3A);
+
+}
+
+.line-icon{
+
+    font-size:26px;
+
+    margin-right:12px;
+
+}
