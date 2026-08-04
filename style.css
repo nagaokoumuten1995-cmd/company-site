@@ -131,42 +131,43 @@ ul{
 
 .logo{
 
-    position:relative;
-
     display:block;
 
     width:105px;
 
-    height:105px;
-
-    transition:all .35s ease;
+    transition:
+        transform .45s ease,
+        width .45s ease;
 
 }
 
-/* 最初のロゴ・小さいロゴ共通 */
+.logo img{
 
-.logo-main,
-.logo-small{
-
-    position:absolute;
-
-    inset:0;
+    display:block;
 
     width:100%;
 
-    height:100%;
-
-    object-fit:contain;
-
-    transition:opacity .35s ease;
+    height:auto;
 
 }
 
-/* 最初は大きいロゴだけ表示 */
+/* スクロール後 */
 
-.logo-main{
+.site-header.scrolled .container{
 
-    opacity:1;
+    justify-content:flex-start;
+
+    height:60px;
+
+    padding:0 14px;
+
+}
+
+.site-header.scrolled .logo{
+
+    width:72px;
+
+    transform:translateX(0);
 
 }
 
