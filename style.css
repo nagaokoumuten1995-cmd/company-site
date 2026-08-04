@@ -36,7 +36,7 @@ body{
 
     overflow-x:hidden;
 
-    padding-bottom:65px;
+    padding-bottom:90px;
 
 }
 
@@ -457,8 +457,6 @@ ul{
 
     width:100%;
 
-    height:58px;
-
     z-index:9999;
 
     line-height:0;
@@ -469,9 +467,7 @@ ul{
 
     width:100%;
 
-    height:58px;
-
-    object-fit:cover;
+    height:auto;
 
     display:block;
 
