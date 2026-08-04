@@ -143,24 +143,9 @@ ul{
 
 }
 
-/* 最初のロゴ */
+/* 最初のロゴ・小さいロゴ共通 */
 
-.logo-main{
-
-    position:absolute;
-
-    inset:0;
-
-    width:100%;
-
-    opacity:1;
-
-    transition:opacity .35s ease;
-
-}
-
-/* 小さいロゴ */
-
+.logo-main,
 .logo-small{
 
     position:absolute;
@@ -169,9 +154,27 @@ ul{
 
     width:100%;
 
-    opacity:0;
+    height:100%;
+
+    object-fit:contain;
 
     transition:opacity .35s ease;
+
+}
+
+/* 最初は大きいロゴだけ表示 */
+
+.logo-main{
+
+    opacity:1;
+
+}
+
+/* 小さいロゴは非表示 */
+
+.logo-small{
+
+    opacity:0;
 
 }
 
