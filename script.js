@@ -2,11 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const header = document.querySelector(".site-header");
 
-    if (!header) return;
+    window.addEventListener("scroll", () => {
 
-    function updateHeader() {
-
-        if (window.scrollY > 60) {
+        if (window.scrollY > 80) {
 
             header.classList.add("scrolled");
 
@@ -16,14 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-    }
-
-    // 初回実行
-    updateHeader();
-
-    // スクロール時
-    window.addEventListener("scroll", updateHeader, {
-        passive: true
     });
 
 });
