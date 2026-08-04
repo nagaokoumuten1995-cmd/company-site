@@ -265,6 +265,10 @@ ul{
 
     display:block;
 
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
 }
 
 .work-card{
@@ -275,9 +279,9 @@ ul{
 
 @media (hover:hover){
 
-.work-card:hover{
+.submit-btn:hover{
 
-    transform:translateY(-5px);
+    background:#336945;
 
 }
 
