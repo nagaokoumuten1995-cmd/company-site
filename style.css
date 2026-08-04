@@ -146,6 +146,80 @@ ul{
 }
 
 /*==============================
+  スクロールヘッダー
+==============================*/
+
+.logo{
+
+    position:relative;
+
+}
+
+.logo-main{
+
+    display:block;
+
+    opacity:1;
+
+    transition:all .30s ease;
+
+}
+
+.logo-small{
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:135px;
+
+    opacity:0;
+
+    transition:all .30s ease;
+
+}
+
+/* スクロール後 */
+
+.site-header.scrolled{
+
+    backdrop-filter:blur(10px);
+
+    background:rgba(255,255,255,.96);
+
+}
+
+.site-header.scrolled .container{
+
+    justify-content:flex-start;
+
+    padding:6px 18px;
+
+}
+
+.site-header.scrolled .logo{
+
+    width:135px;
+
+}
+
+.site-header.scrolled .logo-main{
+
+    opacity:0;
+
+}
+
+.site-header.scrolled .logo-small{
+
+    opacity:1;
+
+}
+
+/*==============================
   ヒーロー
 ==============================*/
 
