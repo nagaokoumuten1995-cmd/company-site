@@ -99,15 +99,19 @@ ul{
 
     top:0;
 
+    left:0;
+
     width:100%;
 
-    background:#fff;
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(10px);
 
     z-index:999;
 
     box-shadow:0 2px 8px rgba(0,0,0,.08);
 
-    transition:.4s;
+    transition:all .35s ease;
 
 }
 
@@ -119,11 +123,15 @@ ul{
 
     align-items:center;
 
-    height:82px;
+    height:68px;
 
-    transition:.4s;
+    transition:all .35s ease;
 
 }
+
+/*==============================
+  ロゴ
+==============================*/
 
 .logo{
 
@@ -133,13 +141,11 @@ ul{
 
     width:90px;
 
-    height:90px;
+    height:60px;
 
 }
 
-/* 通常ロゴ */
-
-.logo-main{
+.logo img{
 
     position:absolute;
 
@@ -151,9 +157,15 @@ ul{
 
     object-fit:contain;
 
-    opacity:1;
-
     transition:opacity .35s ease;
+
+}
+
+/* 通常ロゴ */
+
+.logo-main{
+
+    opacity:1;
 
 }
 
@@ -161,37 +173,29 @@ ul{
 
 .logo-small{
 
-    position:absolute;
-
-    inset:0;
-
-    width:60px;
-
-    height:auto;
-
     opacity:0;
-
-    transition:opacity .35s ease;
 
 }
 
-/* スクロール後 */
+/*==============================
+  スクロール後
+==============================*/
 
 .site-header.scrolled .container{
 
     justify-content:flex-start;
 
-    padding:0 14px;
+    padding:0 12px;
 
-    height:52px;
+    height:48px;
 
 }
 
 .site-header.scrolled .logo{
 
-    width:60px;
+    width:58px;
 
-    height:40px;
+    height:38px;
 
 }
 
