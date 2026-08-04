@@ -149,15 +149,15 @@ header .container{
 
     position:absolute;
 
-    left:8%;
+    left:7%;
 
-    width:84%;
+    width:86%;
 
-    height:11%;
+    top:79%;
 
-    top:77%;
+    height:10%;
 
-    z-index:10;
+    z-index:100;
 
     display:block;
 
