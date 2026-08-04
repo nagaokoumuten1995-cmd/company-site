@@ -36,7 +36,8 @@ body{
 
     overflow-x:hidden;
 
-    padding-bottom:120px;
+    /* footer2.jpgの高さに合わせる */
+    padding-bottom:110px;
 
 }
 
@@ -518,7 +519,6 @@ ul{
     z-index:2;
 
 }
-  
 
 /*==============================
   フッター
@@ -532,7 +532,7 @@ ul{
 
     text-align:center;
 
-    padding:30px 0 140px;
+    padding:30px 0 130px;
 
     font-size:14px;
 
