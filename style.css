@@ -60,15 +60,21 @@ header{
 }
 
 header .container{
-
-    padding:10px 0;
-
+    padding:18px 0;
     display:flex;
-
     justify-content:center;
-
     align-items:center;
+}
 
+.logo{
+    display:block;
+    width:220px;
+}
+
+.logo img{
+    display:block;
+    width:100%;
+    height:auto;
 }
 
 .logo{
