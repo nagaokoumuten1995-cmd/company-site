@@ -1,7 +1,7 @@
-/* ==========================================
-   凌雲工務店 完成版 Ver.2
-   STEP1 共通設定
-========================================== */
+/* ======================================
+   凌雲工務店 完成版 Ver.3
+   STEP3 共通設定
+====================================== */
 
 *{
     margin:0;
@@ -14,590 +14,103 @@ html{
 }
 
 body{
-    font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+    font-family:"Noto Sans JP","Yu Gothic",sans-serif;
+    background:#ffffff;
     color:#333;
-    background:#f8f8f8;
     line-height:1.8;
 }
 
-/* コンテナ */
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:0 auto;
-}
-
-/* 画像 */
-
 img{
-    max-width:100%;
+    width:100%;
     display:block;
 }
-
-/* リンク */
 
 a{
     text-decoration:none;
     color:inherit;
+    -webkit-tap-highlight-color:transparent;
 }
-
-/* リスト */
-
-ul{
-    list-style:none;
-}
-
-/* セクション */
 
 section{
-    padding:100px 0;
+    width:100%;
 }
 
-/* 見出し */
-
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
+.container{
+    width:min(1200px,92%);
+    margin:auto;
 }
 
-.section-title span{
-    display:block;
-    color:#4DB8E8;
-    font-size:14px;
-    letter-spacing:3px;
-    font-weight:bold;
-    margin-bottom:10px;
-}
+/* ======================================
+   ヘッダー
+====================================== */
 
-.section-title h2{
-    font-size:42px;
-    color:#222;
-    margin-bottom:15px;
-}
+header{
 
-.section-sub{
-    color:#777;
-    font-size:18px;
-}
-
-/* ボタン */
-
-.btn{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:320px;
-
-    max-width:90%;
-
-    padding:18px 25px;
-
-    border-radius:60px;
-
-    background:linear-gradient(135deg,#4EB5F1,#2F9DE2);
-
-    color:#fff;
-
-    font-size:20px;
-
-    font-weight:700;
-
-    white-space:nowrap;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-
-    transition:.3s;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.35);
-
-}
-
-.btn.sub{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
 
     background:#fff;
 
-    color:#3AA9E8;
+    z-index:999;
 
-    border:3px solid #fff;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
 
 }
 
-/* スマホ */
+header .container{
 
-@media(max-width:768px){
-
-    section{
-        padding:70px 0;
-    }
-
-    .section-title h2{
-        font-size:30px;
-    }
-
-    .section-sub{
-        font-size:16px;
-    }
-
-}
-/* ==========================================
-   STEP2 ヘッダー（完成版）
-========================================== */
-
-
-.header .container{
+    height:90px;
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:center;
 
     align-items:center;
 
 }
 
-/* ---------- ロゴ ---------- */
-
 .logo{
 
-    margin-bottom:15px;
+    width:170px;
 
 }
 
 .logo img{
-
-    width:150px;
-
-    display:block;
-
-}
-
-/* ---------- メニュー ---------- */
-
-nav{
 
     width:100%;
 
 }
 
-nav ul{
+/* ======================================
+   共通画像
+====================================== */
 
-    display:flex;
+.full-image{
 
-    justify-content:center;
+    width:100%;
 
-    flex-wrap:wrap;
-
-    gap:20px 35px;
-
-}
-
-nav li{
-
-    list-style:none;
+    display:block;
 
 }
 
-nav a{
-
-    color:#333;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    transition:.3s;
-
-}
-
-nav a:hover{
-
-    color:#3AA9E8;
-
-}
-
-/* ---------- スマホ ---------- */
+/* ======================================
+   スマホ
+====================================== */
 
 @media(max-width:768px){
 
-.header{
+header .container{
 
-    padding:20px 0;
+    height:78px;
 
 }
 
 .logo{
 
-    margin-bottom:20px;
+    width:140px;
 
 }
-
-.logo img{
-
-    width:180px;
-
-}
-
-nav ul{
-
-    gap:15px 25px;
-
-}
-
-nav a{
-
-    font-size:16px;
-
-}
-
-}
-/* =====================================
-   STEP3 ヒーロー（完成版）
-===================================== */
-
-.hero{
-
-    position:relative;
-
-    min-height:100vh;
-
-    background:url("hero.jpg") center top no-repeat;
-
-    background-size:100% auto;
-
-    background-color:#000;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    overflow:hidden;
-
-}
-
-/* 画像のLINEボタン部分だけクリック可能 */
-
-.hero-line{
-
-    position:absolute;
-
-    left:8%;
-
-    width:84%;
-
-    height:95px;
-
-    bottom:120px;
-
-    display:block;
-
-    background:transparent;
-
-    z-index:10;
-
-}
-
-/* スマホ */
-
-@media(max-width:768px){
-
-    .hero{
-
-        min-height:700px;
-
-        background-position:center top;
-
-    }
-
-    @media(max-width:768px){
-
-.hero{
-
-    min-height:100vh;
-
-    background-size:100% auto;
-
-    background-position:center top;
-
-}
-
-.hero-line{
-
-    left:7%;
-
-    width:86%;
-
-    height:95px;
-
-    bottom:92px;
-
-}
-
-}
-
-/* タブレット */
-
-@media(min-width:769px){
-
-    .hero{
-
-    min-height:100vh;
-
-    background-size:contain;
-
-}
-
-    .hero-line{
-
-        width:420px;
-
-        height:100px;
-
-        left:50%;
-
-        transform:translateX(-50%);
-
-        bottom:120px;
-
-    }
-
-}
-/* =====================================
-   HERO キャッチコピー
-===================================== */
-
-.hero-message{
-
-    display:inline-block;
-
-    color:#fff;
-
-    font-size:14px;
-
-    letter-spacing:5px;
-
-    font-weight:700;
-
-    margin-bottom:28px;
-
-    position:relative;
-
-    padding:0 25px;
-
-}
-
-.hero-message::before,
-
-.hero-message::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:50%;
-
-    width:70px;
-
-    height:2px;
-
-    background:rgba(255,255,255,.9);
-
-}
-
-.hero-message::before{
-
-    right:100%;
-
-    margin-right:15px;
-
-}
-
-.hero-message::after{
-
-    left:100%;
-
-    margin-left:15px;
-
-}
-
-.hero h1{
-
-    font-size:58px;
-
-    line-height:1.15;
-
-    font-weight:900;
-
-    color:#fff;
-
-    text-shadow:0 6px 18px rgba(0,0,0,.45);
-
-}
-
-.hero h1 .gold{
-
-    display:inline-block;
-
-    color:#FFD700;
-
-    font-size:90px;
-
-    font-weight:900;
-
-    margin-bottom:8px;
-
-}
-
-.hero h1 .highlight{
-
-    display:inline-block;
-
-    font-size:96px;
-
-    font-weight:900;
-
-    color:#fff;
-
-    border-bottom:7px solid #FFD700;
-
-    padding-bottom:8px;
-
-    margin:10px 0 15px;
-
-}
-
-.hero h1 .company-name{
-
-    display:inline-block;
-
-    font-size:74px;
-
-    font-weight:900;
-
-    margin-top:15px;
-
-}
-
-/* スマホ */
-
-@media(max-width:768px){
-
-.hero-message{
-
-    font-size:13px;
-
-    letter-spacing:4px;
-
-    margin-bottom:25px;
-
-}
-
-.hero h1{
-
-    font-size:48px;
-
-}
-
-.hero h1 .gold{
-
-    font-size:58px;
-
-}
-
-.hero h1 .highlight{
-
-    font-size:60px;
-
-    border-bottom:4px solid #FFD700;
-
-}
-
-.hero h1 .company-name{
-
-    font-size:52px;
-
-}
-
-}
-/* LINEボタン */
-
-.line-btn{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:12px;
-
-    background:#06C755;
-    color:#fff;
-}
-
-.line-icon{
-
-    font-size:28px;
-
-}
-
-.line-btn:hover{
-
-    background:linear-gradient(135deg,#00B900,#009E3A);
-
-}
-
-/* タップ時の青いハイライトを消す */
-
-a{
-    -webkit-tap-highlight-color: transparent;
-}
-
-.btn{
-    -webkit-tap-highlight-color: transparent;
-    outline:none;
-}
-
-.line-btn{
-    -webkit-tap-highlight-color: transparent;
-    outline:none;
-}
-
-.line-btn:focus,
-.line-btn:active{
-    outline:none;
-    box-shadow:none;
-}
-.btn:hover{
-
-    transform:translateY(-3px);
-
-}
-
-.line-btn:hover{
-
-    background:#00B900;
-
-}
-
-.sub:hover{
-
-    background:#f5f5f5;
-
-}
-
-a{
-
-    -webkit-tap-highlight-color:transparent;
 
 }
