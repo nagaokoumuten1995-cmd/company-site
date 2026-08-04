@@ -99,19 +99,15 @@ ul{
 
     top:0;
 
-    left:0;
-
     width:100%;
 
-    background:rgba(255,255,255,.98);
-
-    backdrop-filter:blur(10px);
+    background:#fff;
 
     z-index:999;
 
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 
-    transition:all .35s ease;
+    transition:.4s;
 
 }
 
@@ -123,31 +119,59 @@ ul{
 
     align-items:center;
 
-    height:110px;
+    height:82px;
 
-    transition:all .35s ease;
+    transition:.4s;
 
 }
 
 .logo{
 
+    position:relative;
+
     display:block;
 
-    width:105px;
+    width:90px;
 
-    transition:
-        transform .45s ease,
-        width .45s ease;
+    height:90px;
 
 }
 
-.logo img{
+/* 通常ロゴ */
 
-    display:block;
+.logo-main{
+
+    position:absolute;
+
+    inset:0;
 
     width:100%;
 
+    height:100%;
+
+    object-fit:contain;
+
+    opacity:1;
+
+    transition:opacity .35s ease;
+
+}
+
+/* 小さいロゴ */
+
+.logo-small{
+
+    position:absolute;
+
+    inset:0;
+
+    width:60px;
+
     height:auto;
+
+    opacity:0;
+
+    transition:opacity .35s ease;
 
 }
 
@@ -157,23 +181,31 @@ ul{
 
     justify-content:flex-start;
 
-    height:60px;
-
     padding:0 14px;
+
+    height:52px;
 
 }
 
 .site-header.scrolled .logo{
 
-    width:72px;
+    width:60px;
 
-    transform:translateX(0);
+    height:40px;
 
 }
 
+.site-header.scrolled .logo-main{
 
+    opacity:0;
 
+}
 
+.site-header.scrolled .logo-small{
+
+    opacity:1;
+
+}
 
 /*==============================
   ヒーロー
