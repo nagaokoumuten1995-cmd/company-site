@@ -196,92 +196,150 @@ ul{
 
 }
 
+
 /*==============================
   施工事例
 ==============================*/
 
 .works{
 
-    padding:70px 0;
+    padding:50px 0 70px;
 
-    background:#f8faf8;
-
-}
-
-.section-title{
-
-    text-align:center;
-
-    margin-bottom:45px;
+    background:#ffffff;
 
 }
 
-.section-title h2{
+.work-item{
 
-    font-size:34px;
-
-    color:#2f6b45;
-
-    margin-bottom:10px;
+    margin-bottom:60px;
 
 }
 
-.section-title p{
+.work-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.work-item h3{
+
+    font-size:24px;
+
+    color:#333;
+
+    margin-bottom:5px;
+
+}
+
+.work-item p{
 
     color:#666;
 
     font-size:16px;
 
-}
-
-.works-grid{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:30px;
+    margin-bottom:20px;
 
 }
 
-.work-card{
+.work-images{
 
-    background:#fff;
+    display:flex;
 
-    border-radius:12px;
+    align-items:center;
 
-    overflow:hidden;
+    justify-content:center;
 
-    box-shadow:
-    0 5px 20px
-    rgba(0,0,0,.08);
+    gap:20px;
 
 }
 
-.work-images img{
+.work-photo{
+
+    flex:1;
+
+}
+
+.work-photo span{
+
+    display:block;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    color:#3f7f53;
+
+    margin-bottom:10px;
+
+    font-size:18px;
+
+}
+
+.work-photo img{
 
     width:100%;
 
     display:block;
 
-    aspect-ratio:4/3;
+    border-radius:10px;
 
-    object-fit:cover;
-
-}
-
-.work-card{
-
-    transition:.3s;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 
 }
 
-@media (hover:hover){
+.work-arrow{
 
-.submit-btn:hover{
+    font-size:40px;
 
-    background:#336945;
+    font-weight:bold;
+
+    color:#3f7f53;
+
+    flex:none;
+
+}
+
+/*==============================
+  スマホ
+==============================*/
+
+@media (max-width:768px){
+
+.work-item{
+
+    margin-bottom:45px;
+
+}
+
+.work-item h3{
+
+    font-size:20px;
+
+}
+
+.work-item p{
+
+    font-size:15px;
+
+    margin-bottom:15px;
+
+}
+
+.work-images{
+
+    gap:10px;
+
+}
+
+.work-photo span{
+
+    font-size:15px;
+
+}
+
+.work-arrow{
+
+    font-size:24px;
 
 }
 
@@ -372,6 +430,16 @@ ul{
 .submit-btn:hover{
 
     background:#336945;
+
+}
+
+@media (hover:hover){
+
+.submit-btn:hover{
+
+    background:#336945;
+
+}
 
 }
 
@@ -507,13 +575,7 @@ ul{
 
 }
 
-.works-grid{
 
-    grid-template-columns:1fr;
-
-    gap:20px;
-
-}
 
 .contact{
 
@@ -572,12 +634,6 @@ ul{
 ==============================*/
 
 @media (min-width:769px) and (max-width:1024px){
-
-.works-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
 
 .logo{
 
