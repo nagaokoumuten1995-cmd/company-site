@@ -32,6 +32,8 @@ body{
 
     overflow-x:hidden;
 
+    padding-bottom:95px;
+
 }
 
 /*==============================
@@ -77,6 +79,8 @@ ul{
     width:100%;
 
     display:block;
+
+    vertical-align:bottom;
 
 }
 
@@ -147,6 +151,8 @@ ul{
     width:100%;
 
     display:block;
+
+    vertical-align:bottom;
 
 }
 
@@ -255,7 +261,10 @@ ul{
 
     width:100%;
 
+    display:block;
+
 }
+
 /*==============================
   お問い合わせ
 ==============================*/
@@ -300,6 +309,8 @@ ul{
     transition:.3s;
 
     background:#fff;
+    
+    resize:vertical;
 
 }
 
