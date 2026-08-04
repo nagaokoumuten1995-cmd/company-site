@@ -630,7 +630,7 @@ ul{
 
 .site-header .container{
 
-    height:72px;
+    height:110px;
 
 }
 
@@ -638,13 +638,13 @@ ul{
 
     width:105px;
 
-    height:105px;
+    height:70px;
 
 }
 
 .site-header.scrolled .container{
 
-    height:50px;
+    height:44px;
 
     padding:0 12px;
 
@@ -652,9 +652,9 @@ ul{
 
 .site-header.scrolled .logo{
 
-    width:105px;
+    width:80px;
 
-    height:42px;
+    height:40px;
 
 }
 
