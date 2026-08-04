@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function toggleHeader() {
 
-        if (window.scrollY > 80) {
+        if (window.scrollY > 45) {
 
             header.classList.add("hide");
             floatingLogo.classList.add("show");
