@@ -1,24 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
     const header = document.querySelector(".site-header");
+    const floatingLogo = document.querySelector(".floating-logo");
 
-    if (!header) return;
+    function toggleHeader() {
 
-    function updateHeader() {
+        if (window.scrollY > 80) {
 
-        if (window.scrollY > 40) {
-            header.classList.add("scrolled");
+            header.classList.add("hide");
+            floatingLogo.classList.add("show");
+
         } else {
-            header.classList.remove("scrolled");
+
+            header.classList.remove("hide");
+            floatingLogo.classList.remove("show");
+
         }
 
     }
 
-    // 初回読み込み時
-    updateHeader();
+    // 初回表示
+    toggleHeader();
 
     // スクロール時
-    window.addEventListener("scroll", updateHeader, {
+    window.addEventListener("scroll", toggleHeader, {
         passive: true
     });
 
