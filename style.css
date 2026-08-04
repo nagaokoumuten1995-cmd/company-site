@@ -120,3 +120,43 @@ header .container{
 }
 
 }
+
+/* ======================================
+   STEP4 ヒーロー
+====================================== */
+
+#hero{
+
+    position:relative;
+
+    width:100%;
+
+    line-height:0;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* LINEボタンだけクリック */
+
+.hero-line{
+
+    position:absolute;
+
+    left:8%;
+
+    width:84%;
+
+    bottom:8%;
+
+    height:12%;
+
+    z-index:10;
+
+}
