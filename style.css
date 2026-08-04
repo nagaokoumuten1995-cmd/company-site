@@ -171,53 +171,9 @@ ul{
 
 }
 
-/* 小さいロゴは非表示 */
 
-.logo-small{
 
-    opacity:0;
 
-}
-
-/*==============================
-  スクロール後
-==============================*/
-
-.site-header.scrolled{
-
-    background:rgba(255,255,255,.96);
-
-}
-
-.site-header.scrolled .container{
-
-    justify-content:flex-start;
-
-    height:60px;
-
-    padding:0 14px;
-
-}
-
-.site-header.scrolled .logo{
-
-    width:80px;
-
-    height:80px;
-
-}
-
-.site-header.scrolled .logo-main{
-
-    opacity:0;
-
-}
-
-.site-header.scrolled .logo-small{
-
-    opacity:1;
-
-}
 
 /*==============================
   ヒーロー
