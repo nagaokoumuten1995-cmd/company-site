@@ -175,15 +175,15 @@ ul{
 
     opacity:0;
 
-    transform:translateY(-10px);
+    transform:translateY(-14px) scale(.92);
 
     transition:
-
-        opacity .35s ease,
-
-        transform .35s ease;
+        opacity .5s ease,
+        transform .5s ease;
 
     pointer-events:none;
+
+    filter:drop-shadow(0 4px 10px rgba(0,0,0,.18));
 
 }
 
@@ -201,7 +201,7 @@ ul{
 
     opacity:1;
 
-    transform:translateY(0);
+    transform:translateY(0) scale(1);
 
     pointer-events:auto;
 
