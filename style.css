@@ -36,7 +36,7 @@ body{
 
     overflow-x:hidden;
 
-    /* footer2.jpgの高さに合わせる */
+    /* 固定フッターの高さ分 */
     padding-bottom:105px;
 
 }
