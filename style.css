@@ -487,25 +487,29 @@ ul{
 
 .footer-phone{
 
-    left:4%;
+    position:absolute;
 
-    top:18%;
+    left:0;
 
-    width:42%;
+    top:0;
 
-    height:60%;
+    width:50%;
+
+    height:100%;
 
 }
 
 .footer-line{
 
-    right:4%;
+    position:absolute;
 
-    top:18%;
+    right:0;
 
-    width:42%;
+    top:0;
 
-    height:60%;
+    width:50%;
+
+    height:100%;
 
 }
 
@@ -598,26 +602,6 @@ ul{
     top:76%;
 
     height:12%;
-
-}
-
-.footer-phone{
-
-    left:3%;
-
-    width:44%;
-
-    height:82%;
-
-}
-
-.footer-line{
-
-    right:3%;
-
-    width:44%;
-
-    height:82%;
 
 }
 
