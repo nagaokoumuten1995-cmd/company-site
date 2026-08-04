@@ -1,15 +1,29 @@
-window.addEventListener("scroll", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     const header = document.querySelector(".site-header");
 
-    if(window.scrollY > 60){
+    if (!header) return;
 
-        header.classList.add("scrolled");
+    function updateHeader() {
 
-    }else{
+        if (window.scrollY > 60) {
 
-        header.classList.remove("scrolled");
+            header.classList.add("scrolled");
+
+        } else {
+
+            header.classList.remove("scrolled");
+
+        }
 
     }
+
+    // 初回実行
+    updateHeader();
+
+    // スクロール時
+    window.addEventListener("scroll", updateHeader, {
+        passive: true
+    });
 
 });
