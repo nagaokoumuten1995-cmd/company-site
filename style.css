@@ -103,15 +103,11 @@ ul{
 
     width:100%;
 
-    background:rgba(255,255,255,.96);
-
-    backdrop-filter:blur(10px);
+    background:#fff;
 
     z-index:999;
 
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
-
-    transition:all .35s ease;
+    transition:.45s ease;
 
 }
 
@@ -123,57 +119,27 @@ ul{
 
     align-items:center;
 
-    height:68px;
+    height:110px;
 
-    transition:all .35s ease;
+    transition:.45s ease;
 
 }
 
-/*==============================
-  ロゴ
-==============================*/
-
 .logo{
-
-    position:relative;
 
     display:block;
 
-    width:90px;
-
-    height:60px;
+    width:120px;
 
 }
 
 .logo img{
 
-    position:absolute;
-
-    inset:0;
+    display:block;
 
     width:100%;
 
-    height:100%;
-
-    object-fit:contain;
-
-    transition:opacity .35s ease;
-
-}
-
-/* 通常ロゴ */
-
-.logo-main{
-
-    opacity:1;
-
-}
-
-/* 小さいロゴ */
-
-.logo-small{
-
-    opacity:0;
+    height:auto;
 
 }
 
@@ -181,33 +147,93 @@ ul{
   スクロール後
 ==============================*/
 
-.site-header.scrolled .container{
+.site-header.hide{
 
-    justify-content:flex-start;
-
-    padding:0 12px;
-
-    height:48px;
-
-}
-
-.site-header.scrolled .logo{
-
-    width:58px;
-
-    height:38px;
-
-}
-
-.site-header.scrolled .logo-main{
+    transform:translateY(-100%);
 
     opacity:0;
 
+    pointer-events:none;
+
 }
 
-.site-header.scrolled .logo-small{
+/*==============================
+  フローティングロゴ
+==============================*/
+
+.floating-logo{
+
+    position:fixed;
+
+    top:12px;
+
+    left:12px;
+
+    width:72px;
+
+    z-index:1000;
+
+    opacity:0;
+
+    transform:translateY(-10px);
+
+    transition:
+
+        opacity .35s ease,
+
+        transform .35s ease;
+
+    pointer-events:none;
+
+}
+
+.floating-logo img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+.floating-logo.show{
 
     opacity:1;
+
+    transform:translateY(0);
+
+    pointer-events:auto;
+
+}
+
+/*==============================
+  スマホ
+==============================*/
+
+@media (max-width:768px){
+
+.site-header .container{
+
+    height:110px;
+
+}
+
+.logo{
+
+    width:115px;
+
+}
+
+.floating-logo{
+
+    width:68px;
+
+    top:10px;
+
+    left:10px;
+
+}
 
 }
 
