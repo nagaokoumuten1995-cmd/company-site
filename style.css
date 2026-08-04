@@ -186,11 +186,9 @@ ul{
 
 .image-section img{
 
-    border-radius:12px;
+    border-radius:0;
 
-    box-shadow:
-    0 10px 30px
-    rgba(0,0,0,.08);
+    box-shadow:none;
 
 }
 
